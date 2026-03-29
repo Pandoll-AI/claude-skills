@@ -15,7 +15,7 @@
         "url": "https://github.com/Pandoll-AI/claude-nanobanana-skill.git"
       },
       "description": "Gemini 웹 이미지 생성 자동화 + 워터마크 자동 제거. Chrome CDP로 gemini.google.com을 조작하여 이미지를 생성하고, 서버사이드 API로 워터마크를 감지/제거합니다.",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "keywords": ["gemini", "image-generation", "watermark", "automation", "imagen"]
     }
   ]
