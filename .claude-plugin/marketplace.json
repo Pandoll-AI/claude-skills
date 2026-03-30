@@ -79,6 +79,17 @@
       "keywords": ["ontology", "architecture", "system-design", "structural-intelligence", "analysis"]
     },
     {
+      "name": "CC-Agents-Native-KMP-App",
+      "source": {
+        "source": "local",
+        "path": "CC-Agents-Native-KMP-App"
+      },
+      "description": "[ARCHIVED] Kotlin Multiplatform (Android + iOS) 앱 빌드 파이프라인용 Claude Code 에이전트 & 슬래시 커맨드. 오래되어 작동하지 않을 수 있음.",
+      "version": "1.0.0",
+      "archived": true,
+      "keywords": ["kmp", "kotlin", "android", "ios", "multiplatform", "archived"]
+    },
+    {
       "name": "supabase-to-aws",
       "source": {
         "source": "local",
