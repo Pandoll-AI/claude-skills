@@ -77,6 +77,16 @@
       "description": "프로젝트 아키텍처를 온톨로지 원칙으로 분석하고 구조적 지능으로 개선합니다. 6공간 분석, CMR 분석, 메타 온톨로지 설계를 지원합니다.",
       "version": "1.0.0",
       "keywords": ["ontology", "architecture", "system-design", "structural-intelligence", "analysis"]
+    },
+    {
+      "name": "supabase-to-aws",
+      "source": {
+        "source": "local",
+        "path": "supabase-to-aws"
+      },
+      "description": "Supabase ↔ AWS 풀 라이프사이클 포터빌리티 플러그인. 코드베이스 커플링 감사, 개발 중 포터빌리티 규칙 적용, Auth/Storage/Database 마이그레이션 자동화.",
+      "version": "1.0.0",
+      "keywords": ["supabase", "aws", "rds", "migration", "database", "portability"]
     }
   ]
 }

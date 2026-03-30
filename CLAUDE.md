@@ -21,11 +21,13 @@ Pandoll-AI가 제작한 Claude Code 스킬들의 마켓플레이스 레지스트
 | ui-walkthrough | 1.0.0 | local | UI/UX 감사 + 스크린샷 리포트 |
 | wiki-generator | 1.0.0 | local | 시각적 인터랙티브 문서 생성 |
 | ontologic-system-design | 1.0.0 | local | 온톨로지 기반 아키텍처 분석 |
+| supabase-to-aws | 1.0.0 | local | Supabase ↔ AWS 마이그레이션 자동화 |
 
 ## 관련 리포 (등록 대상 아님)
 
 - **`~/Projects/codex-nanobanana-skill`** — nanobanana의 codex CLI 변형판. `skills.sh` 등록용 실험 리포이며, 이 마켓플레이스에는 등록하지 않음.
 - **`~/Projects/deepcode-claude-skills`** — DeepCode Paper2Code 워크플로우. 내가 만든 스킬이 아니므로 등록하지 않음 (로컬 설치용으로만 사용).
+- **`Pandoll-AI/my-claude-plugins`** — (삭제됨) supabase-to-aws 스킬이 있던 리포. 이 리포(`claude-skills`)로 통합 완료 후 삭제함.
 
 ## 작업 방식
 
