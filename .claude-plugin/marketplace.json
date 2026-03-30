@@ -17,6 +17,16 @@
       "description": "Gemini 웹 이미지 생성 자동화 + 워터마크 자동 제거. Chrome CDP로 gemini.google.com을 조작하여 이미지를 생성하고, 서버사이드 API로 워터마크를 감지/제거합니다.",
       "version": "0.2.4",
       "keywords": ["gemini", "image-generation", "watermark", "automation", "imagen"]
+    },
+    {
+      "name": "codex-llm-skill",
+      "source": {
+        "source": "local",
+        "path": "codex-llm-skill"
+      },
+      "description": "프로젝트에 codex 기반 LLM 커넥터를 대화형으로 설치. 기존 LLM API 호출을 codex CLI로 교체하여 구독 쿼타 내 무비용 운용, 멀티 스테이지 파이프라인(T1/T2/T3 권한 등급), 최신 모델 자동 선택, 환경변수 한 줄로 prod API 전환 지원.",
+      "version": "1.0.0",
+      "keywords": ["codex", "llm", "connector", "openai", "pipeline", "zero-cost"]
     }
   ]
 }
