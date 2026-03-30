@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "method": "GET",
+    "path": "/api/users",
+    "description": "Retrieve list of all users",
+    "auth_required": true,
+    "file_path": "src/routes/users.ts"
+  },
+  {
+    "id": 2,
+    "method": "POST",
+    "path": "/api/users",
+    "description": "Create a new user",
+    "auth_required": true,
+    "file_path": "src/routes/users.ts"
+  },
+  {
+    "id": 3,
+    "method": "GET",
+    "path": "/api/users/:id",
+    "description": "Get user by ID",
+    "auth_required": true,
+    "file_path": "src/routes/users.ts"
+  },
+  {
+    "id": 4,
+    "method": "PUT",
+    "path": "/api/users/:id",
+    "description": "Update user information",
+    "auth_required": true,
+    "file_path": "src/routes/users.ts"
+  },
+  {
+    "id": 5,
+    "method": "DELETE",
+    "path": "/api/users/:id",
+    "description": "Delete a user",
+    "auth_required": true,
+    "file_path": "src/routes/users.ts"
+  }
+]

@@ -1,0 +1,46 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
+
+export function PriceCalculator() {
+  const [quantity, setQuantity] = useState(1);
+  const pricePerUnit = 29.99;
+  const total = quantity * pricePerUnit;
+
+  return (
+    <div className="p-6 border rounded-lg shadow-sm">
+      <h3 className="text-lg font-semibold mb-4">Price Calculator</h3>
+
+      <div className="mb-4">
+        <label className="block text-sm font-medium mb-2">
+          Quantity
+        </label>
+        <Input
+          type="number"
+          min="1"
+          value={quantity}
+          onChange={(e) => setQuantity(parseInt(e.target.value) || 1)}
+          className="w-full"
+        />
+      </div>
+
+      <div className="mb-4">
+        <p className="text-sm text-gray-600">
+          Price per unit: ${pricePerUnit.toFixed(2)}
+        </p>
+      </div>
+
+      <div className="p-4 bg-gray-100 rounded">
+        <p className="text-xl font-bold">
+          Total: ${total.toFixed(2)}
+        </p>
+      </div>
+
+      <Button className="w-full mt-4">
+        Add to Cart
+      </Button>
+    </div>
+  );
+}
+
+<PriceCalculator />

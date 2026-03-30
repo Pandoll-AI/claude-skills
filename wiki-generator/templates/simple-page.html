@@ -1,0 +1,17 @@
+<h1>System Architecture</h1>
+
+<p>We built this application using a microservices architecture with three main components: frontend, API gateway, and backend services.</p>
+
+<excalidraw data-path="data/system-architecture.json"></excalidraw>
+
+<p>The frontend communicates with the backend through the API gateway. See <code>src/api/gateway.ts</code> for routing logic and <code>src/services/</code> for individual service implementations.</p>
+
+<hr />
+
+<h2>🔐 Authentication</h2>
+
+<p>We use JWT tokens for authentication. Users log in through OAuth2, receive a token, and include it in subsequent requests.</p>
+
+<excalidraw data-path="data/auth-flow.json"></excalidraw>
+
+<p>Token validation happens in <code>src/middleware/auth.ts</code>. Tokens expire after 24 hours and can be refreshed using the <code>/api/refresh</code> endpoint.</p>

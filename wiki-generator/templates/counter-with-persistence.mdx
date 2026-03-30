@@ -1,0 +1,45 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Plus, Minus, RotateCcw } from "lucide-react";
+import counterData from "~/data/counter.json";
+
+export function Counter() {
+  const { data, updateData } = useData(counterData);
+
+  const increment = () => updateData({ ...data, count: data.count + 1 });
+  const decrement = () => updateData({ ...data, count: Math.max(0, data.count - 1) });
+  const reset = () => updateData({ ...data, count: 0 });
+
+  return (
+    <Card className="w-full max-w-sm">
+      <CardHeader className="text-center">
+        <CardTitle className="flex items-center justify-center gap-2">
+          Persistent Counter
+          <Badge variant="outline">Auto-saves</Badge>
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="text-center">
+          <span className="text-6xl font-bold tabular-nums">{data.count}</span>
+        </div>
+        <div className="flex justify-center gap-2">
+          <Button variant="outline" size="icon" onClick={decrement}>
+            <Minus className="h-4 w-4" />
+          </Button>
+          <Button variant="outline" size="icon" onClick={reset}>
+            <RotateCcw className="h-4 w-4" />
+          </Button>
+          <Button variant="outline" size="icon" onClick={increment}>
+            <Plus className="h-4 w-4" />
+          </Button>
+        </div>
+        <p className="text-center text-sm text-muted-foreground">
+          This counter persists across page refreshes!
+        </p>
+      </CardContent>
+    </Card>
+  );
+}
+
+<Counter />

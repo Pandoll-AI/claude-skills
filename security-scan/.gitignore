@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Temporary state (referenced by scripts)
+# Note: These are in /tmp/ by default, not in this directory
+# Included here in case local paths are configured
+browser_state/
+reports/
+*.png
+*.pdf
+
+# Logs
+*.log
+
+# Credentials (should never be committed)
+.env
+.env.local
+credentials.json

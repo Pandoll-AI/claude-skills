@@ -1,0 +1,9 @@
+graph TD
+    A[Frontend - React] --> B[API Gateway]
+    B --> C[Auth Service]
+    B --> D[User Service]
+    B --> E[Order Service]
+    C --> F[(Database)]
+    D --> F
+    E --> F
+    E --> G[Payment Gateway]

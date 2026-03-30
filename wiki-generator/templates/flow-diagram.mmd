@@ -1,0 +1,9 @@
+flowchart LR
+    A[Client Request] --> B[API Gateway]
+    B --> C{Auth Valid?}
+    C -->|Yes| D[Route Handler]
+    C -->|No| E[401 Unauthorized]
+    D --> F[Process Request]
+    F --> G[Database Query]
+    G --> H[Format Response]
+    H --> I[Return JSON]
