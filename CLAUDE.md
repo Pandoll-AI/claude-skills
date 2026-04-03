@@ -22,6 +22,7 @@ Pandoll-AI가 제작한 Claude Code 스킬들의 마켓플레이스 레지스트
 | wiki-generator | 1.0.0 | local | 시각적 인터랙티브 문서 생성 |
 | ontologic-system-design | 1.0.0 | local | 온톨로지 기반 아키텍처 분석 |
 | supabase-to-aws | 1.0.0 | local | Supabase ↔ AWS 마이그레이션 자동화 |
+| phase-guardian | 0.1.0 | local | 작업 phase 완료 시 자동 리뷰 + 문서화 + 커밋 강제 (gstack 의존) |
 | CC-Agents-Native-KMP-App | 1.0.0 | local | **[ARCHIVED]** KMP (Android+iOS) 빌드 에이전트. 오래되어 작동 미보장 |
 
 ## 관련 리포 (등록 대상 아님)
