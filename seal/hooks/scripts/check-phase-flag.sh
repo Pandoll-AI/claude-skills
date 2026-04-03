@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-FLAG_FILE="$CLAUDE_PROJECT_DIR/.phase-guardian-done"
+FLAG_FILE="$CLAUDE_PROJECT_DIR/.seal-done"
 
 if [ -f "$FLAG_FILE" ]; then
   # Phase documentation already completed this session — let Claude stop

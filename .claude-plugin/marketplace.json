@@ -100,10 +100,10 @@
       "keywords": ["supabase", "aws", "rds", "migration", "database", "portability"]
     },
     {
-      "name": "phase-guardian",
+      "name": "seal",
       "source": {
         "source": "local",
-        "path": "phase-guardian"
+        "path": "seal"
       },
       "description": "작업 phase 완료 시 자동으로 /review + CHANGELOG/KNOWLEDGE/STRUCTURE 문서화 + git commit/push를 강제하는 워크플로우 플러그인. Stop 훅으로 자동 트리거, /wrap으로 수동 트리거. gstack 의존.",
       "version": "0.1.0",

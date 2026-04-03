@@ -60,7 +60,7 @@ git push
 ## Step 5: 플래그 생성
 
 ```bash
-touch "$CLAUDE_PROJECT_DIR/.phase-guardian-done"
+touch "$CLAUDE_PROJECT_DIR/.seal-done"
 ```
 
 이 플래그는 Stop 훅이 이중으로 문서화를 강제하지 않도록 방지합니다.

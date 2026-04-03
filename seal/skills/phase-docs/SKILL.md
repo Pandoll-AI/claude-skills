@@ -3,7 +3,7 @@ name: phase-docs
 version: 0.1.0
 description: |
   Phase documentation writer. Generates and updates CHANGELOG.md, KNOWLEDGE.md,
-  and STRUCTURE.md after meaningful code work. Auto-activated by phase-guardian
+  and STRUCTURE.md after meaningful code work. Auto-activated by seal
   hooks or manually via /wrap command. Maintains ontological knowledge graph
   (entities, relations, actions) and project structure documentation.
 allowed-tools:
@@ -17,7 +17,7 @@ allowed-tools:
 
 # Phase Documentation Guide
 
-이 스킬은 phase-guardian 플러그인의 문서화 엔진입니다. 코드 작업 후 3개의 문서를 생성/업데이트합니다.
+이 스킬은 seal 플러그인의 문서화 엔진입니다. 코드 작업 후 3개의 문서를 생성/업데이트합니다.
 
 ## 문서 위치 규칙
 

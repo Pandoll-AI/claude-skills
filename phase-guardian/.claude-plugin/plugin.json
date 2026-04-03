@@ -1,9 +1,0 @@
-{
-  "name": "phase-guardian",
-  "version": "0.1.0",
-  "description": "Enforces review + documentation + commit workflow after every meaningful work phase",
-  "author": {
-    "name": "sjlee"
-  },
-  "keywords": ["review", "documentation", "changelog", "knowledge-graph", "workflow"]
-}
