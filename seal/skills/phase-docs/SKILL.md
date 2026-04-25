@@ -1,11 +1,7 @@
 ---
 name: phase-docs
 version: 0.1.0
-description: |
-  Phase documentation writer. Generates and updates CHANGELOG.md, KNOWLEDGE.md,
-  and STRUCTURE.md after meaningful code work. Auto-activated by seal
-  hooks or manually via /wrap command. Maintains ontological knowledge graph
-  (entities, relations, actions) and project structure documentation.
+description: Internal doc-writer used by /wrap. Updates CHANGELOG.md, KNOWLEDGE.md, STRUCTURE.md.
 allowed-tools:
   - Read
   - Write

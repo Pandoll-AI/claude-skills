@@ -1,5 +1,5 @@
 {
-  "description": "seal — enforces review + docs + commit after meaningful work phases",
+  "description": "seal — code change detection + phase wrap workflow",
   "hooks": {
     "Stop": [
       {
@@ -9,11 +9,6 @@
             "type": "command",
             "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-phase-flag.sh",
             "timeout": 5
-          },
-          {
-            "type": "prompt",
-            "prompt": "You are a phase completion gate. Evaluate whether this session involved meaningful code work that warrants documentation.\n\nCRITERIA FOR BLOCKING (all must be false for approve):\n- Were Write or Edit tools used to create or modify source code files? (not just config or docs)\n- Were new features implemented, bugs fixed, or significant refactoring done?\n- Did the work span multiple files or involve architectural changes?\n\nIf the session was ONLY: answering questions, reading files, minor config tweaks, or discussion — return 'approve'.\n\nIf meaningful code work was done, return 'block' with this EXACT systemMessage:\n\n\"[seal] Phase 작업이 감지되었습니다. 마무리 워크플로우를 실행합니다:\n1. Skill 도구를 사용하여 skill: 'review'를 호출하세요 (gstack /review).\n2. 프로젝트 루트(또는 해당 모듈 폴더)의 CHANGELOG.md를 업데이트하세요. 없으면 생성하세요. 포맷: ## [날짜] Phase: 제목 / ### Added, Changed, Fixed, Review 섹션.\n3. KNOWLEDGE.md를 업데이트하세요. 없으면 생성하세요. Entities 테이블(Entity, Type, Location, Description), Relations 테이블(Subject, Relation, Object, Context), Actions 테이블(Date, Action, Actor, Target, Detail)을 포함.\n4. STRUCTURE.md를 업데이트하세요. 없으면 생성하세요. Workflow, Key Files 테이블(File, Role, Depends On), Database 테이블, CLI/Scripts 테이블을 포함.\n5. 변경된 모든 파일을 git add하고 commit하세요. 커밋 메시지: 'docs: phase wrap — [간단한 설명]'. 그리고 git push하세요.\n6. 마지막으로 프로젝트 루트에 .seal-done 파일을 touch하세요.\"\n\nReturn your decision as JSON: {\"decision\": \"approve\"} or {\"decision\": \"block\", \"reason\": \"meaningful code work detected\", \"systemMessage\": \"위의 메시지\"}",
-            "timeout": 30
           }
         ]
       }
