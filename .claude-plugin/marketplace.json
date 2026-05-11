@@ -19,6 +19,16 @@
       "keywords": ["gemini", "image-generation", "watermark", "automation", "imagen"]
     },
     {
+      "name": "maigret-skill",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Pandoll-AI/claude-maigret-skill.git"
+      },
+      "description": "3,000+ 사이트에서 username 으로 공개 프로필을 검색하는 OSINT 도구 Maigret 의 CLI 래퍼. 사이트 매칭 엄격도(checkType/absence/presence) 기반 false-positive 필터링, 신뢰도 버킷별 마크다운 요약, HTML 시각 리포트 동시 생성.",
+      "version": "0.1.0",
+      "keywords": ["maigret", "osint", "username-search", "sherlock", "footprint", "social-media", "digital-identity"]
+    },
+    {
       "name": "codex-llm-skill",
       "source": "./codex-llm-skill",
       "description": "프로젝트에 codex 기반 LLM 커넥터를 대화형으로 설치. 기존 LLM API 호출을 codex CLI로 교체하여 구독 쿼타 내 무비용 운용, 멀티 스테이지 파이프라인(T1/T2/T3 권한 등급), 최신 모델 자동 선택, 환경변수 한 줄로 prod API 전환 지원.",
