@@ -98,6 +98,20 @@
       "description": "작업 phase 완료 시 자동으로 /review + CHANGELOG/KNOWLEDGE/STRUCTURE 문서화 + git commit/push를 강제하는 워크플로우 플러그인. Stop 훅으로 자동 트리거, /wrap으로 수동 트리거. gstack 의존.",
       "version": "0.1.0",
       "keywords": ["review", "documentation", "changelog", "knowledge-graph", "workflow", "hooks", "automation"]
+    },
+    {
+      "name": "human-writing",
+      "source": "./human-writing",
+      "description": "AI가 쓴 한국어·영어 글의 'AI 티'를 최소 편집으로 걷어내는 문체 하네스. 진단만 할지 재작성할지 자동 분기하고(Stage 1/2), 코드블록·표·인용·수치를 보호구역으로 먼저 표시한 뒤, 문서 위험도에 따라 Minimal/Balanced/Strong 정책을 고른다. 이미 자연스러운 글은 손대지 않는 것이 정답이라는 전제로 설계됐다. 강의 원고·교안·스피커노트는 references/lecture.md의 한국어 강의체 규칙(합쇼체 뼈대 + 구간별 화계 전환)을 적용한다.",
+      "version": "1.1.0",
+      "keywords": ["humanize", "korean", "writing-style", "ai-detection", "rewriting", "lecture", "editorial"]
+    },
+    {
+      "name": "gongmun-style",
+      "source": "./gongmun-style",
+      "description": "한국 공공기관 공문서·약식보고서 문체(개조식)로 글을 변환·작성한다. 명사형 종결(~함/~음/~필요), 두괄식 괄호 표제, 객관적 관찰자 시점, 대주제·중주제·소주제 불릿 위계, 정돈된 표를 적용한다. 원문 내용·수치·근거는 하나도 빠뜨리지 않고 보존하며, 마커형/마크다운형/JSON 브리프 세 가지 렌더링을 지원한다.",
+      "version": "1.0.0",
+      "keywords": ["korean", "government", "official-document", "report", "gaejosik", "public-sector", "hwpx"]
     }
   ]
 }
