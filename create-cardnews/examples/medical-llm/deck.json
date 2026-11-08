@@ -1,0 +1,201 @@
+{
+  "title": "의료 LLM, 한국어에 강하면 영어에도 강할까?",
+  "source": "https://blog.pandoll-ai.com/p/58525fa7-f",
+  "date": "2026.11.08",
+  "cards": [
+    {
+      "type": "cover",
+      "label": "의료 AI · 비교 읽기",
+      "title": "의료 LLM,\n한국어에 강하면\n영어에도 강할까?",
+      "subtitle": "LearningUnit 2.0 · MedGemma · Meerkat2",
+      "source": "원문: blog.pandoll-ai.com/p/58525fa7-f"
+    },
+    {
+      "type": "bullets",
+      "label": "먼저 볼 점",
+      "title": "모델마다 잘하는 일이 다릅니다",
+      "items": [
+        {
+          "head": "LearningUnit 2.0",
+          "body": "한국어 의료 지식과 검색·근거 제시 중심"
+        },
+        {
+          "head": "MedGemma",
+          "body": "영어 의학지식과 의료영상·문서 등 멀티모달"
+        },
+        {
+          "head": "Meerkat2 · ZEO Med 2",
+          "body": "한국 제도와 시험·의료 추가학습에 초점"
+        }
+      ],
+      "source": "모델별 공개 카드 및 논문"
+    },
+    {
+      "type": "bars",
+      "label": "한국어 비교",
+      "title": "한국어 의학문항에서는?",
+      "metric": "KorMedMCQA · CoEval (개발사 공개 평가)",
+      "bars": [
+        {
+          "name": "L1-30B-A5B",
+          "value": 89.53
+        },
+        {
+          "name": "Qwen3.6-35B-A3B",
+          "value": 86.34
+        },
+        {
+          "name": "GPT-OSS-120B",
+          "value": 84.8
+        },
+        {
+          "name": "MedGemma 27B Text",
+          "value": 56.4
+        }
+      ],
+      "note": "같은 표에서 비교한 점수입니다. 임상 현장의 안전성이나 진단 정확도를 뜻하지 않습니다.",
+      "source": "L1-30B-A5B Hugging Face · CoEval"
+    },
+    {
+      "type": "bullets",
+      "label": "한국어 모델",
+      "title": "국내 의료 모델의 서로 다른 접근",
+      "items": [
+        {
+          "head": "L1",
+          "body": "의료지식·도구 호출·국내 실증"
+        },
+        {
+          "head": "Meerkat2",
+          "body": "한국 의료법령과 간결한 추론"
+        },
+        {
+          "head": "HARI · KMed.ai",
+          "body": "한국어 의학지식과 임상 환경"
+        },
+        {
+          "head": "ZEO Med 2",
+          "body": "Gemma 기반 의료 추가학습"
+        }
+      ],
+      "source": "모델 카드·EMNLP 2026"
+    },
+    {
+      "type": "bars",
+      "label": "영어 비교",
+      "title": "영어 MedQA 결과는?",
+      "metric": "MedQA · CoEval (개발사 공개 평가)",
+      "bars": [
+        {
+          "name": "L1-30B-A5B",
+          "value": 92.3
+        },
+        {
+          "name": "GPT-OSS-120B",
+          "value": 91.1
+        },
+        {
+          "name": "Qwen3.6-35B-A3B",
+          "value": 89.32
+        },
+        {
+          "name": "MedGemma 27B Text",
+          "value": 84.4
+        }
+      ],
+      "note": "영어 의료대화 품질을 평가하는 HealthBench에서는 다른 순위가 나올 수 있습니다.",
+      "source": "L1-30B-A5B Hugging Face · CoEval"
+    },
+    {
+      "type": "bullets",
+      "label": "멀티모달",
+      "title": "MedGemma는 영상·문서가 강점",
+      "items": [
+        {
+          "head": "의료 영상",
+          "body": "X-ray, 병리, CT·MRI 관련 모델·과제"
+        },
+        {
+          "head": "의무기록·문서",
+          "body": "임상 문서와 검사 결과 처리"
+        },
+        {
+          "head": "텍스트 점수만으로 평가 금지",
+          "body": "영상 입력이 없는 모델과 목적부터 다릅니다"
+        }
+      ],
+      "source": "Google HAI-DEF · MedGemma 논문"
+    },
+    {
+      "type": "stats",
+      "label": "평가 해석",
+      "title": "ZEO Med 2: 개선 폭이 핵심",
+      "stats": [
+        {
+          "name": "한국어 시험형",
+          "value": "97.70%",
+          "detail": "ZEO Med 2, self-consistency@5"
+        },
+        {
+          "name": "기반 Gemma 4",
+          "value": "97.01%",
+          "detail": "같은 평가에서 원형 모델의 결과"
+        }
+      ],
+      "note": "차이는 0.69%포인트. 높은 절대점수와 추가학습의 효과는 다릅니다.",
+      "source": "ZeroOneAI · ZEO Med 2 모델 카드"
+    },
+    {
+      "type": "stats",
+      "label": "임상 실증",
+      "title": "KTAS 98%는 무엇을 뜻할까?",
+      "stats": [
+        {
+          "name": "KTAS 분류",
+          "value": "98%",
+          "detail": "전문의 판정과 한 단계 이내 일치"
+        },
+        {
+          "name": "암 다학제 진료",
+          "value": "86.2%",
+          "detail": "제안 방침이 타당하다고 평가된 비율"
+        }
+      ],
+      "note": "‘한 단계 이내 일치’는 정확도 98%와 다릅니다. 과소분류율을 확인해야 합니다.",
+      "source": "루닛 2026.11.06 발표"
+    },
+    {
+      "type": "bullets",
+      "label": "로컬 활용",
+      "title": "메모리보다 포팅 검증이 관건",
+      "items": [
+        {
+          "head": "L1-30B-A5B",
+          "body": "원본 BF16 약 59GB; GravityMoE 호환성 검증 필요"
+        },
+        {
+          "head": "MedGemma",
+          "body": "MLX 변환 모델 존재; 영상·텍스트 버전 구별"
+        },
+        {
+          "head": "평가 방식",
+          "body": "동일 사례와 동일 프롬프트로 한국어·영어를 따로 시험"
+        }
+      ],
+      "source": "공식 모델 카드·MLX Community"
+    },
+    {
+      "type": "conclusion",
+      "label": "결론",
+      "title": "1등보다 중요한 것은 과제 적합성",
+      "points": [
+        "한국어 지침·업무지원: L1 우선 검증",
+        "의료영상·문서 처리: MedGemma 계열 검토",
+        "영어 의학 대화: 범용 모델까지 함께 비교",
+        "실제 응급의료: 과소분류·근거 오류·판단 보류를 측정"
+      ],
+      "note": "시험 점수 ≠ 임상 안전성. 역할을 분리하고 실패를 검증해야 합니다.",
+      "source": "원문 종합 · 2026.11.08"
+    }
+  ]
+}

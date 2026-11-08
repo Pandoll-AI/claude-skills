@@ -23,3 +23,5 @@ Claude Code 플러그인 마켓플레이스입니다.
 | **seal** | 작업 phase 완료 시 자동 리뷰 + 문서화 + 커밋 강제 | `/plugin install seal@pandoll-ai-skills` |
 | **design-reference** | 디자인 스타일 카탈로그 & 레퍼런스 (115개 스타일 매칭) | `/plugin install design-reference@pandoll-ai-skills` |
 | ~~CC-Agents-Native-KMP-App~~ | [ARCHIVED] KMP (Android+iOS) 빌드 에이전트 | — |
+
+| **create-cardnews** | 논문·블로그를 근거 기반 1122×1402 카드뉴스로 제작 | `/plugin install create-cardnews@pandoll-ai-skills` |

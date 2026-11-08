@@ -16,7 +16,13 @@
       },
       "description": "Gemini 웹 이미지 생성 자동화 + 워터마크 자동 제거. Chrome CDP로 gemini.google.com을 조작하여 이미지를 생성하고, 서버사이드 API로 워터마크를 감지/제거합니다.",
       "version": "0.2.4",
-      "keywords": ["gemini", "image-generation", "watermark", "automation", "imagen"]
+      "keywords": [
+        "gemini",
+        "image-generation",
+        "watermark",
+        "automation",
+        "imagen"
+      ]
     },
     {
       "name": "maigret-skill",
@@ -26,49 +32,96 @@
       },
       "description": "3,000+ 사이트에서 username 으로 공개 프로필을 검색하는 OSINT 도구 Maigret 의 CLI 래퍼. 사이트 매칭 엄격도(checkType/absence/presence) 기반 false-positive 필터링, 신뢰도 버킷별 마크다운 요약, HTML 시각 리포트 동시 생성.",
       "version": "0.1.0",
-      "keywords": ["maigret", "osint", "username-search", "sherlock", "footprint", "social-media", "digital-identity"]
+      "keywords": [
+        "maigret",
+        "osint",
+        "username-search",
+        "sherlock",
+        "footprint",
+        "social-media",
+        "digital-identity"
+      ]
     },
     {
       "name": "codex-llm-skill",
       "source": "./codex-llm-skill",
       "description": "프로젝트에 codex 기반 LLM 커넥터를 대화형으로 설치. 기존 LLM API 호출을 codex CLI로 교체하여 구독 쿼타 내 무비용 운용, 멀티 스테이지 파이프라인(T1/T2/T3 권한 등급), 최신 모델 자동 선택, 환경변수 한 줄로 prod API 전환 지원.",
       "version": "1.0.0",
-      "keywords": ["codex", "llm", "connector", "openai", "pipeline", "zero-cost"]
+      "keywords": [
+        "codex",
+        "llm",
+        "connector",
+        "openai",
+        "pipeline",
+        "zero-cost"
+      ]
     },
     {
       "name": "coding-score",
       "source": "./coding-score",
       "description": "AI 생성 코드의 품질을 6가지 영역(기능정확성, 성능, 보안, 유지보수성, 아키텍처, UX)에서 평가하고 상세 리포트를 제공합니다.",
       "version": "1.0.0",
-      "keywords": ["code-quality", "evaluation", "scoring", "review", "tech-debt"]
+      "keywords": [
+        "code-quality",
+        "evaluation",
+        "scoring",
+        "review",
+        "tech-debt"
+      ]
     },
     {
       "name": "security-scan",
       "source": "./security-scan",
       "description": "침투 테스트 및 보안 취약점 평가. OWASP Top 10, XSS, SQL injection 등 웹 애플리케이션 보안 평가를 수행합니다.",
       "version": "1.0.0",
-      "keywords": ["pentest", "security", "vulnerability", "owasp", "xss", "sql-injection"]
+      "keywords": [
+        "pentest",
+        "security",
+        "vulnerability",
+        "owasp",
+        "xss",
+        "sql-injection"
+      ]
     },
     {
       "name": "ui-walkthrough",
       "source": "./ui-walkthrough",
       "description": "UI/UX 감사 스킬. 브라우저 UI 플로우를 단계별로 탐색하고 스크린샷을 캡처하여 소스 코드 추적 리포트를 생성합니다.",
       "version": "1.0.0",
-      "keywords": ["ui", "ux", "audit", "walkthrough", "screenshot", "accessibility"]
+      "keywords": [
+        "ui",
+        "ux",
+        "audit",
+        "walkthrough",
+        "screenshot",
+        "accessibility"
+      ]
     },
     {
       "name": "wiki-generator",
       "source": "./wiki-generator",
       "description": "다이어그램, 화이트보드, 편집 가능한 컴포넌트가 포함된 시각적 인터랙티브 문서를 생성합니다. 코드베이스 문서화, 아키텍처 설명, 시스템 다이어그램 작성에 사용.",
       "version": "1.0.0",
-      "keywords": ["documentation", "wiki", "diagram", "architecture", "interactive"]
+      "keywords": [
+        "documentation",
+        "wiki",
+        "diagram",
+        "architecture",
+        "interactive"
+      ]
     },
     {
       "name": "ontologic-system-design",
       "source": "./ontologic-system-design",
       "description": "프로젝트 아키텍처를 온톨로지 원칙으로 분석하고 구조적 지능으로 개선합니다. 6공간 분석, CMR 분석, 메타 온톨로지 설계를 지원합니다.",
       "version": "1.0.0",
-      "keywords": ["ontology", "architecture", "system-design", "structural-intelligence", "analysis"]
+      "keywords": [
+        "ontology",
+        "architecture",
+        "system-design",
+        "structural-intelligence",
+        "analysis"
+      ]
     },
     {
       "name": "CC-Agents-Native-KMP-App",
@@ -76,42 +129,102 @@
       "description": "[ARCHIVED] Kotlin Multiplatform (Android + iOS) 앱 빌드 파이프라인용 Claude Code 에이전트 & 슬래시 커맨드. 오래되어 작동하지 않을 수 있음.",
       "version": "1.0.0",
       "archived": true,
-      "keywords": ["kmp", "kotlin", "android", "ios", "multiplatform", "archived"]
+      "keywords": [
+        "kmp",
+        "kotlin",
+        "android",
+        "ios",
+        "multiplatform",
+        "archived"
+      ]
     },
     {
       "name": "supabase-to-aws",
       "source": "./supabase-to-aws",
       "description": "Supabase ↔ AWS 풀 라이프사이클 포터빌리티 플러그인. 코드베이스 커플링 감사, 개발 중 포터빌리티 규칙 적용, Auth/Storage/Database 마이그레이션 자동화.",
       "version": "1.0.0",
-      "keywords": ["supabase", "aws", "rds", "migration", "database", "portability"]
+      "keywords": [
+        "supabase",
+        "aws",
+        "rds",
+        "migration",
+        "database",
+        "portability"
+      ]
     },
     {
       "name": "design-reference",
       "source": "./design-reference",
       "description": "디자인 스타일 카탈로그 & 레퍼런스. 115개 디자인을 키워드로 분류. UI/프론트엔드 작업 시 적합한 디자인 스타일을 매칭하고 제안합니다.",
       "version": "1.0.0",
-      "keywords": ["design", "ui", "frontend", "style", "catalog", "reference"]
+      "keywords": [
+        "design",
+        "ui",
+        "frontend",
+        "style",
+        "catalog",
+        "reference"
+      ]
     },
     {
       "name": "seal",
       "source": "./seal",
       "description": "작업 phase 완료 시 자동으로 /review + CHANGELOG/KNOWLEDGE/STRUCTURE 문서화 + git commit/push를 강제하는 워크플로우 플러그인. Stop 훅으로 자동 트리거, /wrap으로 수동 트리거. gstack 의존.",
       "version": "0.1.0",
-      "keywords": ["review", "documentation", "changelog", "knowledge-graph", "workflow", "hooks", "automation"]
+      "keywords": [
+        "review",
+        "documentation",
+        "changelog",
+        "knowledge-graph",
+        "workflow",
+        "hooks",
+        "automation"
+      ]
     },
     {
       "name": "human-writing",
       "source": "./human-writing",
       "description": "AI가 쓴 한국어·영어 글의 'AI 티'를 최소 편집으로 걷어내는 문체 하네스. 진단만 할지 재작성할지 자동 분기하고(Stage 1/2), 코드블록·표·인용·수치를 보호구역으로 먼저 표시한 뒤, 문서 위험도에 따라 Minimal/Balanced/Strong 정책을 고른다. 이미 자연스러운 글은 손대지 않는 것이 정답이라는 전제로 설계됐다. 강의 원고·교안·스피커노트는 references/lecture.md의 한국어 강의체 규칙(합쇼체 뼈대 + 구간별 화계 전환)을 적용한다.",
       "version": "1.1.0",
-      "keywords": ["humanize", "korean", "writing-style", "ai-detection", "rewriting", "lecture", "editorial"]
+      "keywords": [
+        "humanize",
+        "korean",
+        "writing-style",
+        "ai-detection",
+        "rewriting",
+        "lecture",
+        "editorial"
+      ]
     },
     {
       "name": "gongmun-style",
       "source": "./gongmun-style",
       "description": "한국 공공기관 공문서·약식보고서 문체(개조식)로 글을 변환·작성한다. 명사형 종결(~함/~음/~필요), 두괄식 괄호 표제, 객관적 관찰자 시점, 대주제·중주제·소주제 불릿 위계, 정돈된 표를 적용한다. 원문 내용·수치·근거는 하나도 빠뜨리지 않고 보존하며, 마커형/마크다운형/JSON 브리프 세 가지 렌더링을 지원한다.",
       "version": "1.0.0",
-      "keywords": ["korean", "government", "official-document", "report", "gaejosik", "public-sector", "hwpx"]
+      "keywords": [
+        "korean",
+        "government",
+        "official-document",
+        "report",
+        "gaejosik",
+        "public-sector",
+        "hwpx"
+      ]
+    },
+    {
+      "name": "create-cardnews",
+      "source": "./create-cardnews",
+      "description": "블로그·논문·보고서를 한국어/영어 근거 중심 카드뉴스로 제작. 1122×1402 PNG, 출처·수치 검증, 표·차트·모델 비교, Pillow 렌더러와 JSON 템플릿 제공.",
+      "version": "1.0.0",
+      "keywords": [
+        "cardnews",
+        "carousel",
+        "infographic",
+        "korean",
+        "evidence",
+        "medical-ai",
+        "editorial"
+      ]
     }
   ]
 }
